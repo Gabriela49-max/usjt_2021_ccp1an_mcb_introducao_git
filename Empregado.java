@@ -1,10 +1,12 @@
 public class Empregado{
+
     private int tipo;
     private double salario;
     private double comissao;
     private double bonus;
     private String nome;
     private int idade;
+
 
     public double calcularSalario(){
         switch(tipo)
@@ -18,6 +20,10 @@ public class Empregado{
             return 0;
     }
 
+    public int getTipo(){
+        return tipo;
+    } 
+
     public int getIdade(){
         return idade;
     }
@@ -26,6 +32,10 @@ public class Empregado{
         return nome;
     }
 
+    public void setTipo(int tipo){
+        this.tipo = tipo;
+    }
+    
     public void setIdade(int idade){
         this.idade = idade;
     }
@@ -33,4 +43,5 @@ public class Empregado{
     public void setNome(String Nome){
         this.nome = nome;
     }
+
 }
